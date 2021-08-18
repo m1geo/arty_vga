@@ -12,4 +12,4 @@ The SuperPET Character ROM was taken from [cbmchr on 6502.org](http://www.6502.o
 # Image
 Here's what it looks like:
 
-![Old VGA screen showing the output from this project](https://github.com/m1geo/arty_vga/images/screen.jpg "Old VGA screen showing the output from this project")
+![Old VGA screen showing the output from this project](https://raw.githubusercontent.com/m1geo/arty_vga/main/images/screen.jpg "Old VGA screen showing the output from this project")
