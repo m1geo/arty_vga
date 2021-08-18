@@ -1,0 +1,1135 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x904C6A38CE6041DE",
+      "device": "xc7a35ticsg324-1L",
+      "gen_directory": "../../../../arty_vga.gen/sources_1/bd/arty_8bit_colour",
+      "name": "arty_8bit_colour",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz": "",
+      "vga_pmod_0": "",
+      "xlconcat_0": "",
+      "xlslice_0": "",
+      "consts_0": "",
+      "char_rom_0": "",
+      "xlslice_1": "",
+      "pixel_ram": "",
+      "vga_timing_0": "",
+      "ila_0": "",
+      "foreground_colour": "",
+      "background_colour": "",
+      "xlslice_2": "",
+      "pixel_mux_0": "",
+      "spi_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "arty_8bit_colour_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "VGA_G": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "VGA_R": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "VGA_B": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "VGA_HS_O": {
+        "direction": "O"
+      },
+      "VGA_VS_O": {
+        "direction": "O"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "LED": {
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "4",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "SLIDE_SW": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SCK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "arty_8bit_colour_SCK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "1000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "MOSI": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "NCS": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "arty_8bit_colour_clk_wiz_0",
+        "xci_path": "ip\\arty_8bit_colour_clk_wiz_0\\arty_8bit_colour_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "159.371"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "40"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "pixclk40m"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "25.000"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_RESET": {
+            "value": "true"
+          }
+        }
+      },
+      "vga_pmod_0": {
+        "vlnv": "xilinx.com:module_ref:vga_pmod:1.0",
+        "xci_name": "arty_8bit_colour_vga_pmod_0_0",
+        "xci_path": "ip\\arty_8bit_colour_vga_pmod_0_0\\arty_8bit_colour_vga_pmod_0_0.xci",
+        "inst_hier_path": "vga_pmod_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_pmod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "hs": {
+            "direction": "I"
+          },
+          "vs": {
+            "direction": "I"
+          },
+          "pixel_data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "VGA_R": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "VGA_G": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "VGA_B": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "VGA_HS": {
+            "direction": "O"
+          },
+          "VGA_VS": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "arty_8bit_colour_xlconcat_0_0",
+        "xci_path": "ip\\arty_8bit_colour_xlconcat_0_0\\arty_8bit_colour_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "1"
+          },
+          "IN2_WIDTH": {
+            "value": "1"
+          },
+          "IN3_WIDTH": {
+            "value": "1"
+          },
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "arty_8bit_colour_xlslice_0_0",
+        "xci_path": "ip\\arty_8bit_colour_xlslice_0_0\\arty_8bit_colour_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "consts_0": {
+        "vlnv": "xilinx.com:module_ref:consts:1.0",
+        "xci_name": "arty_8bit_colour_consts_0_0",
+        "xci_path": "ip\\arty_8bit_colour_consts_0_0\\arty_8bit_colour_consts_0_0.xci",
+        "inst_hier_path": "consts_0",
+        "parameters": {
+          "FG_COL": {
+            "value": "\"11111111\""
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "consts",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "FG_C": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "BG_C": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "hi": {
+            "direction": "O"
+          },
+          "lo": {
+            "direction": "O"
+          }
+        }
+      },
+      "char_rom_0": {
+        "vlnv": "xilinx.com:module_ref:char_rom:1.0",
+        "xci_name": "arty_8bit_colour_char_rom_0_0",
+        "xci_path": "ip\\arty_8bit_colour_char_rom_0_0\\arty_8bit_colour_char_rom_0_0.xci",
+        "inst_hier_path": "char_rom_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "char_rom",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "OE_n": {
+            "direction": "I"
+          },
+          "vaddr": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "char": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "bank": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "arty_8bit_colour_xlslice_1_0",
+        "xci_path": "ip\\arty_8bit_colour_xlslice_1_0\\arty_8bit_colour_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "pixel_ram": {
+        "vlnv": "xilinx.com:module_ref:vid_ram:1.0",
+        "xci_name": "arty_8bit_colour_vid_ram_0_0",
+        "xci_path": "ip\\arty_8bit_colour_vid_ram_0_0\\arty_8bit_colour_vid_ram_0_0.xci",
+        "inst_hier_path": "pixel_ram",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vid_ram",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "vid_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "haddr": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "vaddr": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "pix_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "addr": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "d_valid": {
+            "direction": "I"
+          }
+        }
+      },
+      "vga_timing_0": {
+        "vlnv": "xilinx.com:module_ref:vga_timing:1.0",
+        "xci_name": "arty_8bit_colour_vga_timing_0_0",
+        "xci_path": "ip\\arty_8bit_colour_vga_timing_0_0\\arty_8bit_colour_vga_timing_0_0.xci",
+        "inst_hier_path": "vga_timing_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_timing",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "pxl_data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "haddr": {
+            "direction": "O",
+            "left": "10",
+            "right": "0"
+          },
+          "vaddr": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "hsync": {
+            "direction": "O"
+          },
+          "vsync": {
+            "direction": "O"
+          },
+          "pxl_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "new_frame": {
+            "direction": "O"
+          },
+          "visible_region": {
+            "direction": "O"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "arty_8bit_colour_ila_0_0",
+        "xci_path": "ip\\arty_8bit_colour_ila_0_0\\arty_8bit_colour_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "32768"
+          },
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "9"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "14"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "foreground_colour": {
+        "vlnv": "xilinx.com:module_ref:vid_ram:1.0",
+        "xci_name": "arty_8bit_colour_vid_ram_0_1",
+        "xci_path": "ip\\arty_8bit_colour_vid_ram_0_1\\arty_8bit_colour_vid_ram_0_1.xci",
+        "inst_hier_path": "foreground_colour",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vid_ram",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "vid_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "haddr": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "vaddr": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "pix_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "addr": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "d_valid": {
+            "direction": "I"
+          }
+        }
+      },
+      "background_colour": {
+        "vlnv": "xilinx.com:module_ref:vid_ram:1.0",
+        "xci_name": "arty_8bit_colour_vid_ram_0_2",
+        "xci_path": "ip\\arty_8bit_colour_vid_ram_0_2\\arty_8bit_colour_vid_ram_0_2.xci",
+        "inst_hier_path": "background_colour",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vid_ram",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "vid_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "haddr": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "vaddr": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "pix_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "addr": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "d_valid": {
+            "direction": "I"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "arty_8bit_colour_xlslice_2_0",
+        "xci_path": "ip\\arty_8bit_colour_xlslice_2_0\\arty_8bit_colour_xlslice_2_0.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "pixel_mux_0": {
+        "vlnv": "xilinx.com:module_ref:pixel_mux:1.0",
+        "xci_name": "arty_8bit_colour_pixel_mux_0_0",
+        "xci_path": "ip\\arty_8bit_colour_pixel_mux_0_0\\arty_8bit_colour_pixel_mux_0_0.xci",
+        "inst_hier_path": "pixel_mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pixel_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "haddr": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "colour_fore": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "colour_back": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "char_word": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "default_colours": {
+            "direction": "I"
+          },
+          "pixel_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "spi_0": {
+        "vlnv": "xilinx.com:module_ref:spi:1.0",
+        "xci_name": "arty_8bit_colour_spi_0_0",
+        "xci_path": "ip\\arty_8bit_colour_spi_0_0\\arty_8bit_colour_spi_0_0.xci",
+        "inst_hier_path": "spi_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "spi_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "1000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "arty_8bit_colour_SCK",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "spi_mosi": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "spi_csn": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "40000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "addr": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "data_valid": {
+            "direction": "O"
+          },
+          "fc_valid": {
+            "direction": "O"
+          },
+          "bc_valid": {
+            "direction": "O"
+          },
+          "mem_debug": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "clk_wiz_pixclk50m": {
+        "ports": [
+          "clk_wiz/pixclk40m",
+          "vga_pmod_0/clk",
+          "char_rom_0/clk",
+          "pixel_ram/vid_clk",
+          "pixel_ram/clk",
+          "vga_timing_0/clk",
+          "ila_0/clk",
+          "foreground_colour/vid_clk",
+          "background_colour/vid_clk",
+          "foreground_colour/clk",
+          "background_colour/clk",
+          "spi_0/clk"
+        ]
+      },
+      "vga_timing_0_pxl_data": {
+        "ports": [
+          "vga_timing_0/pxl_data",
+          "vga_pmod_0/pixel_data"
+        ]
+      },
+      "vga_pmod_0_VGA_VS": {
+        "ports": [
+          "vga_pmod_0/VGA_VS",
+          "VGA_VS_O"
+        ]
+      },
+      "vga_pmod_0_VGA_HS": {
+        "ports": [
+          "vga_pmod_0/VGA_HS",
+          "VGA_HS_O"
+        ]
+      },
+      "vga_pmod_0_VGA_R": {
+        "ports": [
+          "vga_pmod_0/VGA_R",
+          "VGA_R"
+        ]
+      },
+      "vga_pmod_0_VGA_G": {
+        "ports": [
+          "vga_pmod_0/VGA_G",
+          "VGA_G"
+        ]
+      },
+      "vga_pmod_0_VGA_B": {
+        "ports": [
+          "vga_pmod_0/VGA_B",
+          "VGA_B"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz/resetn"
+        ]
+      },
+      "vram_0_data_out": {
+        "ports": [
+          "pixel_mux_0/pixel_data",
+          "vga_timing_0/pxl_data_in"
+        ]
+      },
+      "vga_timing_0_hsync": {
+        "ports": [
+          "vga_timing_0/hsync",
+          "vga_pmod_0/hs"
+        ]
+      },
+      "vga_timing_0_vsync": {
+        "ports": [
+          "vga_timing_0/vsync",
+          "vga_pmod_0/vs"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "LED"
+        ]
+      },
+      "clk_wiz_locked": {
+        "ports": [
+          "clk_wiz/locked",
+          "pixel_ram/rstn",
+          "foreground_colour/rstn",
+          "background_colour/rstn"
+        ]
+      },
+      "SLIDE_SW_1": {
+        "ports": [
+          "SLIDE_SW",
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din"
+        ]
+      },
+      "sw0net": {
+        "ports": [
+          "xlslice_0/Dout",
+          "xlconcat_0/In0",
+          "char_rom_0/bank"
+        ]
+      },
+      "consts_0_lo": {
+        "ports": [
+          "consts_0/lo",
+          "char_rom_0/OE_n"
+        ]
+      },
+      "vga_timing_0_haddr": {
+        "ports": [
+          "vga_timing_0/haddr",
+          "pixel_ram/haddr",
+          "foreground_colour/haddr",
+          "background_colour/haddr",
+          "pixel_mux_0/haddr"
+        ]
+      },
+      "char_rom_0_data": {
+        "ports": [
+          "char_rom_0/data",
+          "pixel_mux_0/char_word"
+        ]
+      },
+      "vga_timing_0_vaddr": {
+        "ports": [
+          "vga_timing_0/vaddr",
+          "char_rom_0/vaddr",
+          "pixel_ram/vaddr",
+          "foreground_colour/vaddr",
+          "background_colour/vaddr"
+        ]
+      },
+      "vid_ram_0_pix_data": {
+        "ports": [
+          "pixel_ram/pix_data",
+          "char_rom_0/char"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "vga_timing_0/sel"
+        ]
+      },
+      "spi_0_addr": {
+        "ports": [
+          "spi_0/addr",
+          "pixel_ram/addr",
+          "foreground_colour/addr",
+          "background_colour/addr",
+          "ila_0/probe3"
+        ]
+      },
+      "spi_0_data": {
+        "ports": [
+          "spi_0/data",
+          "pixel_ram/data",
+          "foreground_colour/data",
+          "background_colour/data",
+          "ila_0/probe4"
+        ]
+      },
+      "spi_0_data_valid": {
+        "ports": [
+          "spi_0/data_valid",
+          "pixel_ram/d_valid",
+          "xlconcat_0/In1",
+          "ila_0/probe6"
+        ]
+      },
+      "SCK_1": {
+        "ports": [
+          "SCK",
+          "ila_0/probe0",
+          "spi_0/spi_clk"
+        ]
+      },
+      "MOSI_1": {
+        "ports": [
+          "MOSI",
+          "ila_0/probe1",
+          "spi_0/spi_mosi"
+        ]
+      },
+      "NCS_1": {
+        "ports": [
+          "NCS",
+          "ila_0/probe2",
+          "spi_0/spi_csn"
+        ]
+      },
+      "spi_0_fc_valid": {
+        "ports": [
+          "spi_0/fc_valid",
+          "foreground_colour/d_valid",
+          "xlconcat_0/In2",
+          "ila_0/probe7"
+        ]
+      },
+      "spi_0_bc_valid": {
+        "ports": [
+          "spi_0/bc_valid",
+          "background_colour/d_valid",
+          "xlconcat_0/In3",
+          "ila_0/probe8"
+        ]
+      },
+      "background_colour_pix_data": {
+        "ports": [
+          "background_colour/pix_data",
+          "pixel_mux_0/colour_back"
+        ]
+      },
+      "spi_0_mem_debug": {
+        "ports": [
+          "spi_0/mem_debug",
+          "ila_0/probe5"
+        ]
+      },
+      "foreground_colour_pix_data": {
+        "ports": [
+          "foreground_colour/pix_data",
+          "pixel_mux_0/colour_fore"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "pixel_mux_0/default_colours"
+        ]
+      }
+    }
+  }
+}

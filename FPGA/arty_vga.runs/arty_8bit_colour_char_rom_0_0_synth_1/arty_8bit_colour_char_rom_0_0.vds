@@ -1,0 +1,226 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Aug 15 18:29:41 2021
+# Process ID: 78208
+# Current directory: C:/tmp/arty_vga/arty_vga.runs/arty_8bit_colour_char_rom_0_0_synth_1
+# Command line: vivado.exe -log arty_8bit_colour_char_rom_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arty_8bit_colour_char_rom_0_0.tcl
+# Log file: C:/tmp/arty_vga/arty_vga.runs/arty_8bit_colour_char_rom_0_0_synth_1/arty_8bit_colour_char_rom_0_0.vds
+# Journal file: C:/tmp/arty_vga/arty_vga.runs/arty_8bit_colour_char_rom_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source arty_8bit_colour_char_rom_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1106.078 ; gain = 0.000
+Command: synth_design -top arty_8bit_colour_char_rom_0_0 -part xc7a35ticsg324-1L -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'arty_8bit_colour_char_rom_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 87888
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_char_rom_0_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_char_rom_0_0/synth/arty_8bit_colour_char_rom_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'char_rom' [C:/tmp/arty_vga/arty_vga.srcs/sources_1/new/char_rom.v:9]
+INFO: [Synth 8-226] default block is never used [C:/tmp/arty_vga/arty_vga.srcs/sources_1/new/char_rom.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'char_rom' (1#1) [C:/tmp/arty_vga/arty_vga.srcs/sources_1/new/char_rom.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_char_rom_0_0' (2#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_char_rom_0_0/synth/arty_8bit_colour_char_rom_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1106.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1106.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1106.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 1125.645 ; gain = 19.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------------------------+------------+---------------+----------------+
+|Module Name                   | RTL Object | Depth x Width | Implemented As | 
++------------------------------+------------+---------------+----------------+
+|char_rom                      | z          | 4096x8        | LUT            | 
+|arty_8bit_colour_char_rom_0_0 | inst/z     | 4096x8        | LUT            | 
++------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1165.703 ; gain = 59.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 1166.078 ; gain = 60.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 1185.133 ; gain = 79.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:44 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     1|
+|2     |LUT3  |    11|
+|3     |LUT4  |     5|
+|4     |LUT5  |    18|
+|5     |LUT6  |   356|
+|6     |MUXF7 |    29|
+|7     |MUXF8 |    10|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 1195.441 ; gain = 89.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:40 . Memory (MB): peak = 1195.441 ; gain = 89.363
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1195.441 ; gain = 89.363
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1207.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1207.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:09 . Memory (MB): peak = 1207.469 ; gain = 101.391
+INFO: [Common 17-1381] The checkpoint 'C:/tmp/arty_vga/arty_vga.runs/arty_8bit_colour_char_rom_0_0_synth_1/arty_8bit_colour_char_rom_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Common 17-1381] The checkpoint 'C:/tmp/arty_vga/arty_vga.runs/arty_8bit_colour_char_rom_0_0_synth_1/arty_8bit_colour_char_rom_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file arty_8bit_colour_char_rom_0_0_utilization_synth.rpt -pb arty_8bit_colour_char_rom_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 15 18:32:18 2021...

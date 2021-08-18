@@ -1,0 +1,459 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 18 23:15:39 2021
+# Process ID: 85040
+# Current directory: C:/tmp/arty_vga/arty_vga.runs/synth_1
+# Command line: vivado.exe -log arty_8bit_colour_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arty_8bit_colour_wrapper.tcl
+# Log file: C:/tmp/arty_vga/arty_vga.runs/synth_1/arty_8bit_colour_wrapper.vds
+# Journal file: C:/tmp/arty_vga/arty_vga.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arty_8bit_colour_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1107.035 ; gain = 0.000
+Command: synth_design -top arty_8bit_colour_wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 79240
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_wrapper' [C:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/hdl/arty_8bit_colour_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:13]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_vid_ram_0_2' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vid_ram_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_vid_ram_0_2' (1#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vid_ram_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_char_rom_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_char_rom_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_char_rom_0_0' (2#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_char_rom_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_clk_wiz_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_clk_wiz_0' (3#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_consts_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_consts_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_consts_0_0' (4#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_consts_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'FG_C' of module 'arty_8bit_colour_consts_0_0' is unconnected for instance 'consts_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:108]
+WARNING: [Synth 8-7071] port 'BG_C' of module 'arty_8bit_colour_consts_0_0' is unconnected for instance 'consts_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:108]
+WARNING: [Synth 8-7071] port 'hi' of module 'arty_8bit_colour_consts_0_0' is unconnected for instance 'consts_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:108]
+WARNING: [Synth 8-7023] instance 'consts_0' of module 'arty_8bit_colour_consts_0_0' has 4 connections declared, but only 1 given [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:108]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_vid_ram_0_1' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vid_ram_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_vid_ram_0_1' (5#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vid_ram_0_1_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:120]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_ila_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_ila_0_0' (6#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_pixel_mux_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_pixel_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_pixel_mux_0_0' (7#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_pixel_mux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_vid_ram_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vid_ram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_vid_ram_0_0' (8#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vid_ram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_spi_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_spi_0_0' (9#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_spi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_vga_pmod_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vga_pmod_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_vga_pmod_0_0' (10#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vga_pmod_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_vga_timing_0_0' [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vga_timing_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_vga_timing_0_0' (11#1) [C:/tmp/arty_vga/arty_vga.runs/synth_1/.Xil/Vivado-85040-E124104/realtime/arty_8bit_colour_vga_timing_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'new_frame' of module 'arty_8bit_colour_vga_timing_0_0' is unconnected for instance 'vga_timing_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:169]
+WARNING: [Synth 8-7071] port 'visible_region' of module 'arty_8bit_colour_vga_timing_0_0' is unconnected for instance 'vga_timing_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:169]
+WARNING: [Synth 8-7023] instance 'vga_timing_0' of module 'arty_8bit_colour_vga_timing_0_0' has 10 connections declared, but only 8 given [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:169]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_xlconcat_0_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlconcat_0_0/synth/arty_8bit_colour_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (12#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_xlconcat_0_0' (13#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlconcat_0_0/synth/arty_8bit_colour_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_xlslice_0_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlslice_0_0/synth/arty_8bit_colour_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (14#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_xlslice_0_0' (15#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlslice_0_0/synth/arty_8bit_colour_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_xlslice_1_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlslice_1_0/synth/arty_8bit_colour_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (15#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_xlslice_1_0' (16#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlslice_1_0/synth/arty_8bit_colour_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'arty_8bit_colour_xlslice_2_0' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlslice_2_0/synth/arty_8bit_colour_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (16#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_xlslice_2_0' (17#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_xlslice_2_0/synth/arty_8bit_colour_xlslice_2_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_0'. This will prevent further optimization [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:148]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:120]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pixel_ram'. This will prevent further optimization [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:138]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'foreground_colour'. This will prevent further optimization [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:110]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'background_colour'. This will prevent further optimization [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:86]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour' (18#1) [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/synth/arty_8bit_colour.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'arty_8bit_colour_wrapper' (19#1) [C:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/hdl/arty_8bit_colour_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1107.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1107.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1107.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1107.035 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0_in_context.xdc] for cell 'arty_8bit_colour_i/clk_wiz'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0_in_context.xdc] for cell 'arty_8bit_colour_i/clk_wiz'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vga_pmod_0_0/arty_8bit_colour_vga_pmod_0_0/arty_8bit_colour_vga_pmod_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/vga_pmod_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vga_pmod_0_0/arty_8bit_colour_vga_pmod_0_0/arty_8bit_colour_vga_pmod_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/vga_pmod_0'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_consts_0_0/arty_8bit_colour_consts_0_0/arty_8bit_colour_consts_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/consts_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_consts_0_0/arty_8bit_colour_consts_0_0/arty_8bit_colour_consts_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/consts_0'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_char_rom_0_0/arty_8bit_colour_char_rom_0_0/arty_8bit_colour_char_rom_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/char_rom_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_char_rom_0_0/arty_8bit_colour_char_rom_0_0/arty_8bit_colour_char_rom_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/char_rom_0'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vid_ram_0_0/arty_8bit_colour_vid_ram_0_0/arty_8bit_colour_vid_ram_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/pixel_ram'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vid_ram_0_0/arty_8bit_colour_vid_ram_0_0/arty_8bit_colour_vid_ram_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/pixel_ram'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vga_timing_0_0/arty_8bit_colour_vga_timing_0_0/arty_8bit_colour_vga_timing_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/vga_timing_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vga_timing_0_0/arty_8bit_colour_vga_timing_0_0/arty_8bit_colour_vga_timing_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/vga_timing_0'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_ila_0_0/arty_8bit_colour_ila_0_0/arty_8bit_colour_ila_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/ila_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_ila_0_0/arty_8bit_colour_ila_0_0/arty_8bit_colour_ila_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/ila_0'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vid_ram_0_1/arty_8bit_colour_vid_ram_0_1/arty_8bit_colour_vid_ram_0_1_in_context.xdc] for cell 'arty_8bit_colour_i/foreground_colour'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vid_ram_0_1/arty_8bit_colour_vid_ram_0_1/arty_8bit_colour_vid_ram_0_1_in_context.xdc] for cell 'arty_8bit_colour_i/foreground_colour'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vid_ram_0_2/arty_8bit_colour_vid_ram_0_2/arty_8bit_colour_vid_ram_0_2_in_context.xdc] for cell 'arty_8bit_colour_i/background_colour'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_vid_ram_0_2/arty_8bit_colour_vid_ram_0_2/arty_8bit_colour_vid_ram_0_2_in_context.xdc] for cell 'arty_8bit_colour_i/background_colour'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_pixel_mux_0_0/arty_8bit_colour_pixel_mux_0_0/arty_8bit_colour_pixel_mux_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/pixel_mux_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_pixel_mux_0_0/arty_8bit_colour_pixel_mux_0_0/arty_8bit_colour_pixel_mux_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/pixel_mux_0'
+Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_spi_0_0/arty_8bit_colour_spi_0_0/arty_8bit_colour_spi_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/spi_0'
+Finished Parsing XDC File [c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_spi_0_0/arty_8bit_colour_spi_0_0/arty_8bit_colour_spi_0_0_in_context.xdc] for cell 'arty_8bit_colour_i/spi_0'
+Parsing XDC File [C:/tmp/arty_vga/arty_vga.srcs/constrs_1/new/vga_port.xdc]
+Finished Parsing XDC File [C:/tmp/arty_vga/arty_vga.srcs/constrs_1/new/vga_port.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/tmp/arty_vga/arty_vga.srcs/constrs_1/new/vga_port.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arty_8bit_colour_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arty_8bit_colour_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/tmp/arty_vga/arty_vga.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/tmp/arty_vga/arty_vga.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1148.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1148.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1148.785 ; gain = 41.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1148.785 ; gain = 41.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/tmp/arty_vga/arty_vga.gen/sources_1/bd/arty_8bit_colour/ip/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0/arty_8bit_colour_clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/vga_pmod_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/consts_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/char_rom_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/pixel_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/vga_timing_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/foreground_colour. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/background_colour. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/pixel_mux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for arty_8bit_colour_i/spi_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1148.785 ; gain = 41.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1148.785 ; gain = 41.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1148.785 ; gain = 41.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1179.508 ; gain = 72.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1179.508 ; gain = 72.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1199.121 ; gain = 92.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |arty_8bit_colour_vid_ram_0_2    |         1|
+|2     |arty_8bit_colour_char_rom_0_0   |         1|
+|3     |arty_8bit_colour_clk_wiz_0      |         1|
+|4     |arty_8bit_colour_consts_0_0     |         1|
+|5     |arty_8bit_colour_vid_ram_0_1    |         1|
+|6     |arty_8bit_colour_ila_0_0        |         1|
+|7     |arty_8bit_colour_pixel_mux_0_0  |         1|
+|8     |arty_8bit_colour_vid_ram_0_0    |         1|
+|9     |arty_8bit_colour_spi_0_0        |         1|
+|10    |arty_8bit_colour_vga_pmod_0_0   |         1|
+|11    |arty_8bit_colour_vga_timing_0_0 |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |arty_8bit_colour_char_rom_0   |     1|
+|2     |arty_8bit_colour_clk_wiz      |     1|
+|3     |arty_8bit_colour_consts_0     |     1|
+|4     |arty_8bit_colour_ila_0        |     1|
+|5     |arty_8bit_colour_pixel_mux_0  |     1|
+|6     |arty_8bit_colour_spi_0        |     1|
+|7     |arty_8bit_colour_vga_pmod_0   |     1|
+|8     |arty_8bit_colour_vga_timing_0 |     1|
+|9     |arty_8bit_colour_vid_ram_0    |     3|
+|12    |IBUF                          |     7|
+|13    |OBUF                          |    18|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1203.922 ; gain = 96.887
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1203.922 ; gain = 55.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1203.922 ; gain = 96.887
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1215.977 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1219.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1219.391 ; gain = 112.355
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/tmp/arty_vga/arty_vga.runs/synth_1/arty_8bit_colour_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file arty_8bit_colour_wrapper_utilization_synth.rpt -pb arty_8bit_colour_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 18 23:17:00 2021...
